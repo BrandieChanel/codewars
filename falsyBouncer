@@ -1,0 +1,41 @@
+/*
+Given an array, remove all falsy values from the array
+and return an array of only truthy values.
+
+E.g  falsyBouncer([1, 0, null, '', 5]) // should return [1,5]
+*/
+
+//REMOVE all falsy values
+//remains: truthy values
+//takes in:decimals,null, empty values
+//return:whole integers, that are truthy values
+
+// examples:
+// [1, 0, null, '', 5] ==> [1, 5] would return truthy values one and five 
+// ['', '', null] => [] would return an empty value
+// [true, true, true, null] => [true, true, true] does the function allow for repitition?
+
+
+
+
+// [takes an array] => return array of truthy values
+// get a variable that holds initial empty array, ( let newArray= [])
+// iterate through the array
+    //create a forEach loop
+    //condition to see if array is truthy or falsy
+        //if truthy => return the value
+        //if falsy => ignore the value/don't return it
+
+
+
+function falsyBouncer(array) {
+    let newArray = [];
+    array.forEach( el=> {
+        
+    }
+        
+        )
+}
+
+
+module.exports = falsyBouncer
