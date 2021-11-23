@@ -1,0 +1,32 @@
+/* CHALLENGE
+Given a string of text, return true or false indicating whether or not the text is a palindrome.
+e.g palindromeChecker('racecar') // will return true
+*/
+
+/*
+1. given a string, can return text and whole numbers
+2. function to determine if this is a palindrome
+3. include a true or false for the string confirming if palindrome
+4. examples
+(level, true) (radars, false) (mom, true)
+()
+5.
+*/
+
+//function that declares a string
+//conditional statement if true and is Palindrome
+//return True if string is NOT return false
+
+
+
+
+
+
+function palindromeChecker(text) {
+    // Code goes here
+    let reversed = str.split("").reverse().join("");
+}
+
+
+
+module.exports = palindromeChecker;
