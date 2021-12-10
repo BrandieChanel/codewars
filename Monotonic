@@ -1,0 +1,39 @@
+
+
+
+
+
+//monotonic - non decreasing OR non increasing 
+//given a table of integers whole numbers,postive negative or zero
+//Example: monotonic decreasing [6, 5, 4, 3, -1]
+//Example: monotonic increasing [5, 8, 13, 20]
+//duplicates are allowed within function and function can still determine true/false monotonic
+//return a true or false that the array is montonic
+//return true if monotonic conditional
+//return false if non- monotonic
+
+
+// [3, 2, 3, 4, 5]
+
+//sort through array of integers to determine if previous is increasing
+//conditional statement that if increasing return true monotonic
+//else not increasing return false
+
+
+function is_monotonic(input_array) {
+    let decreasing_exists = false;
+    let increasing_exists = false;
+    
+    for (let i = 1; i < input_array.length; i++){
+        let left = input_array[i - 1];
+        let right = input_array[i];
+    
+        if (left > right) {
+            decreasing_exists = true;
+        } else if (left < right) {
+            increasing_exists= true;
+        }
+    }
+
+    return !(decreasing_exists && increasing_exists)
+}
